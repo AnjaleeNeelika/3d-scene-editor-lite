@@ -6,7 +6,7 @@ A lightweight scene editor built with React Three Fiber, TypeScript and Vite.
 
 ### Steps
 
-'''bash
+```bash
 # 1. Clone the repository
 git clone https://github.com/AnjaleeNeelika/3d-scene-editor-lite.git
 cd 3d-scene-editor-lite
@@ -19,7 +19,7 @@ npm run dev
 
 # 4. Open in your browser
 http://localhost:5173/
-
+```
 
 ## 📁Code Structure Overview
 
