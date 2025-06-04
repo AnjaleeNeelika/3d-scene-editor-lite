@@ -42,7 +42,7 @@ src/
 ├── App.tsx
 ├── index.css
 └── main.tsx
-
+```
 
 ## 🐛 Known Isssues/Limitations
 
