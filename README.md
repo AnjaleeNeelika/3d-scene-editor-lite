@@ -35,10 +35,11 @@ src/
 |       ├── Cube.tsx
 │       └── Sphere.tsx
 │   ├── ButtonsUI.tsx
-│   ├── SceneCanvas.tsx
+│   └── SceneCanvas.tsx
 │   
 ├── types/
 │   └── scene.ts
+|
 ├── App.tsx
 ├── index.css
 └── main.tsx
