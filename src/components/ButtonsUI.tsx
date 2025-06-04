@@ -14,7 +14,7 @@ interface Props {
 
 export const ButtonsUI = ({ objects, setObjects, setSelectedId }: Props) => {
     return (
-        <div className='flex justify-around items-center'>
+        <div className='flex flex-wrap gap-10 justify-around items-center'>
             {/* button to add a cube */}
             <AddCube objects={objects} setObjects={setObjects} />
             {/* button to add a sphere */}

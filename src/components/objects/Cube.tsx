@@ -1,24 +1,28 @@
-import React, { useState } from 'react'
+import React, { useRef, useState } from 'react'
+import * as THREE from 'three' 
 
-export const Cube = ({ position, color }: { position: [number, number, number], color: string }) => {
+export const Cube = ({ id, position, color, selected, onSelect, meshRef }: { id: string, position: [number, number, number], color: string, selected: boolean, onSelect:(id: string | null) => void, meshRef: React.Ref<THREE.Mesh> | null }) => {
     const [hovered, setHovered] = useState(false);
     
     return (
         <mesh 
+            ref={meshRef ?? undefined}
             position={position}
-            onPointerOver={(e) => {
-                e.stopPropagation()
+            onPointerOver={() => {
                 setHovered(true)
                 document.body.style.cursor = 'pointer'
             }}
-            onPointerOut={(e) => {
-                e.stopPropagation()
+            onPointerOut={() => {
                 setHovered(false)
                 document.body.style.cursor = 'default'
             }}
+            onClick={() => {
+                onSelect(selected ? null : id)
+                console.log(id)
+            }}
         >
             <boxGeometry args={[1, 1, 1]} />
-            <meshStandardMaterial color={color} />
+            <meshStandardMaterial color={selected ? 'yellow' : (color)} />
         </mesh>
     )
 }
