@@ -23,31 +23,25 @@ http://localhost:5173/
 
 ## 📁Code Structure Overview
 
+```
 src/
- |__ components  
- 
- |  |__ buttons/  
- 
- |      |__ AddCube.tsx  
- 
- |      |__ AddSphere.tsx  
- 
- |      |__ LoadScene.tsx  
- 
- |      |__ SaveScene.tsx  
- 
- |  |__ objects/  
- 
- |      |__ Cube.tsx
- |      |__ Sphere.tsx
- |  |__ ButtonsUI.tsx
- |  |__ SceneCanvas.tsx
- |__ types/
- |  |__ scene.ts
- |__ App.css
- |__ App.tsx
- |__ index.css
- |__ main.tsx
+├── components/
+|   └── buttons/
+│       ├── AddCube.tsx
+|       ├── AddSphere.tsx
+|       ├── LoadScene.tsx
+│       └── SaveScene.tsx
+│   ├── objects/
+|       ├── Cube.tsx
+│       └── Sphere.tsx
+│   ├── ButtonsUI.tsx
+│   ├── SceneCanvas.tsx
+│   
+├── types/
+│   └── scene.ts
+├── App.tsx
+├── index.css
+└── main.tsx
 
 
 ## 🐛 Known Isssues/Limitations
