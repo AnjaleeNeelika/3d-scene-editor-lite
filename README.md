@@ -24,13 +24,20 @@ http://localhost:5173/
 ## 📁Code Structure Overview
 
 src/
- |__ components
- |  |__ buttons/
- |      |__ AddCube.tsx
- |      |__ AddSphere.tsx
- |      |__ LoadScene.tsx
- |      |__ SaveScene.tsx
- |  |__ objects/
+ |__ components  
+ 
+ |  |__ buttons/  
+ 
+ |      |__ AddCube.tsx  
+ 
+ |      |__ AddSphere.tsx  
+ 
+ |      |__ LoadScene.tsx  
+ 
+ |      |__ SaveScene.tsx  
+ 
+ |  |__ objects/  
+ 
  |      |__ Cube.tsx
  |      |__ Sphere.tsx
  |  |__ ButtonsUI.tsx
