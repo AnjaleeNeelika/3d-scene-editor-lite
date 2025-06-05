@@ -20,7 +20,7 @@ export const ButtonsUI = ({ objects, setObjects, setSelectedId }: Props) => {
             {/* button to add a sphere */}
             <AddSphere objects={objects} setObjects={setObjects} />
             {/* button to save a scene */}
-            <SaveScene />
+            <SaveScene objects={objects} />
             {/* button to load a scene */}
             <LoadScene />
         </div>
