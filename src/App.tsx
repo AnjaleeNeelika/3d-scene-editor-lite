@@ -27,21 +27,6 @@ function App() {
                     selectedId={selectedId} 
                     setSelectedId={setSelectedId} 
                 />
-                {/* {selectedId ? (
-                    <div className="flex gap-10 p-5 fixed bottom-20 right-20 bg-white shadow-2xl border-gray-300 rounded-md">
-                        <label className='text-gray-500 px-2 py-0.5 rounded-md'>Mode</label>
-                        <div className='bg-gray-100 px-5 py-2 rounded-md'>
-                            <select value={mode} onChange={(e) => setMode(e.target.value)} className='bg-gray-100 px-3'>
-                                <option value="translate">Move</option>
-                                <option value="rotate">Rotate</option>
-                                <option value="scale">Scale</option>
-                            </select>
-                        </div>
-                        
-                    </div>
-                ) : (
-                    <></>
-                )}    */}
             </div>            
         </div>
     )
