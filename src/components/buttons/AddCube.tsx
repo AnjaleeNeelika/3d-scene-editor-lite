@@ -11,7 +11,11 @@ export const AddCube = ({ objects, setObjects }: Props) => {
         const newObjects: SceneObject = {
             id: crypto.randomUUID(),
             type: 'cube',
-            position: [0, 0, 0],
+            position: [
+                Math.random(), 
+                0, 
+                Math.random()
+            ],
             rotation: [0, 0, 0],
             scale: [1, 1, 1]
         }
@@ -19,7 +23,7 @@ export const AddCube = ({ objects, setObjects }: Props) => {
     }
 
     return (
-        <button onClick={handleAddCube} className='bg-blue-500 px-6 py-3 text-white rounded-md shadow-2xl cursor-pointer'>
+        <button onClick={handleAddCube} className='bg-blue-500 px-6 py-3 text-white rounded-md shadow-2xl cursor-pointer hover:bg-blue-600'>
             Add a Cube
         </button>
     )

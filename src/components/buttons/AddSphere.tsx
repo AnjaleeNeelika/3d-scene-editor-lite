@@ -11,15 +11,19 @@ export const AddSphere = ({ objects, setObjects }: Props) => {
         const newObjects: SceneObject = {
             id: crypto.randomUUID(),
             type: 'sphere',
-            position: [0, 0, 0],
+            position: [
+                Math.random(), 
+                0, 
+                Math.random()
+            ],
             rotation: [0, 0, 0],
-            scale: [0, 0, 0]
+            scale: [1, 1, 1]
         }
         setObjects([...objects, newObjects])
     }
 
     return (
-        <button onClick={handleAddSphere} className='bg-blue-500 px-6 py-3 text-white rounded-md shadow-2xl cursor-pointer'>
+        <button onClick={handleAddSphere} className='bg-blue-500 px-6 py-3 text-white rounded-md shadow-2xl cursor-pointer hover:bg-blue-600'>
             Add a Sphere
         </button>
     )
