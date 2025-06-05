@@ -41,7 +41,9 @@ export const SceneCanvas = ({ objects, selectedId, setSelectedId }: Props) => {
                         <Cube 
                             key={obj.id}
                             id={obj.id}
-                            position={[0, 1, 5]} 
+                            position={obj.position} 
+                            rotation={obj.rotation}
+                            scale={obj.scale}
                             color="blue"
                             selected={selectedId === obj.id}
                             onSelect={setSelectedId}
@@ -51,7 +53,9 @@ export const SceneCanvas = ({ objects, selectedId, setSelectedId }: Props) => {
                         <Sphere 
                             key={obj.id}
                             id={obj.id}
-                            position={[0, 5, 5]} 
+                            position={obj.position} 
+                            rotation={obj.rotation}
+                            scale={obj.scale}
                             color="red"
                             selected={selectedId === obj.id}
                             onSelect={setSelectedId}

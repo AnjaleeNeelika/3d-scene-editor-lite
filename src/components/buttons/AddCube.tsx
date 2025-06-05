@@ -1,4 +1,3 @@
-import React, { useState } from 'react'
 import type { SceneObject } from '../../types/scene'
 
 interface Props {
@@ -12,9 +11,9 @@ export const AddCube = ({ objects, setObjects }: Props) => {
             id: crypto.randomUUID(),
             type: 'cube',
             position: [
-                Math.random(), 
+                Math.random() * 4, 
                 0, 
-                Math.random()
+                Math.random() * 4
             ],
             rotation: [0, 0, 0],
             scale: [1, 1, 1]

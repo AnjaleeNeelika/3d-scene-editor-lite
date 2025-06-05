@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react'
 import * as THREE from 'three' 
 
-export const Cube = ({ id, position, color, selected, onSelect, meshRef }: { id: string, position: [number, number, number], color: string, selected: boolean, onSelect:(id: string | null) => void, meshRef: React.Ref<THREE.Mesh> | null }) => {
+export const Cube = ({ id, position, scale, rotation, color, selected, onSelect, meshRef }: { id: string, position: [number, number, number], scale: [number, number, number], rotation: [number, number, number], color: string, selected: boolean, onSelect:(id: string | null) => void, meshRef: React.Ref<THREE.Mesh> | null }) => {
     const [hovered, setHovered] = useState(false);
     
     return (
