@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import type { SceneObject } from '../../types/scene'
 
 interface Props {
@@ -7,6 +7,11 @@ interface Props {
 }
 
 export const AddSphere = ({ objects, setObjects }: Props) => {
+    const [values, setValues] = useState({
+        "position": "",
+        "rotation": "",
+        "scale": ""
+    })
     const handleAddSphere = () => {
         const newObjects: SceneObject = {
             id: crypto.randomUUID(),
