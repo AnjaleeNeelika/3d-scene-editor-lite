@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import type { SceneObject } from '../../types/scene'
 
 interface SaveSceneProps {
@@ -17,6 +17,13 @@ export const SaveScene = ({ objects }: SaveSceneProps) => {
             rotation,
             scale,
         }));
+
+        const [values, setValues] = useState({
+            "type": "",
+            "position": "",
+            "rotation": "",
+            "scale": ""
+        });
 
         const json = JSON.stringify(data, null, 2)
         const blob = new Blob([json], { type: 'application/json' })

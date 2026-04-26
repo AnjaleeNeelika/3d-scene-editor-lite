@@ -28,7 +28,7 @@ export const SceneCanvas = ({ objects, selectedId, setSelectedId }: Props) => {
             >
                 <ambientLight intensity={0.5} />
                 <directionalLight position={[10, 10, 5]} intensity={0.5} />
-                <OrbitControls />
+                <OrbitControls makeDefault />
 
                 {objects.map(obj => {
                     const isSelected = selectedId === obj.id
